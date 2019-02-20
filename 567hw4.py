@@ -32,6 +32,9 @@ class CommitTest(unittest.TestCase):
         feedback1=commits('richkempinski')
         rightfeedback={"hellogitworld":30,"helloworld":6,"Mocks":9,"Project1":2,"threads-of-life":1}
         self.assertEqual(feedback1,rightfeedback)
+    @unittest.expectedFailure
+    def testfail(self):
+        feedback2=commits("sdfjvkeandvnsdfnj")
 
 
 
